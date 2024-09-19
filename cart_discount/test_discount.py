@@ -20,14 +20,17 @@ class TestDiscount(TestCase):
         self.assertEqual(expected_discount, discount(prices))
 
     def test_list_of_empty_list(self):
-        prices = []
-        expected_discount = 0
-        self.assertEqual(expected_discount, discount(prices))
-
-    def discount_called_with_strings(self):
         self.fail('finish this test')
 
-    def discount_called_with_float(self):
+    def test_discount_called_with_strings(self):
+        self.fail('finish this test')
+
+
+    def test_discount_called_with_float(self):
+        self.fail('finish this test')
+
+    def test_lisst_with_negative_numbers(self):
+        prices = [-8, -3, -10, -4]
         self.fail('finish this test')
 
     
