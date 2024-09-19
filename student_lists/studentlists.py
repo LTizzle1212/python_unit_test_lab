@@ -14,10 +14,13 @@ class ClassList:
 
     def __init__(self, max_students):
 
-        self.class_list = []
+        if max_students <= 0:
+            raise StudentError('Number of students must be greater than 0')
+
+        self.class_list = [] # check size of class list
         self.max_students = max_students
 
-        # TODO raise an exception - StudentError - if max_students is zero or negative. 
+        # TODO raise an exception - StudentError - if max_students is zero or negative.
         # Write test to confirm.
 
 
